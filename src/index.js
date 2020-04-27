@@ -1,6 +1,5 @@
 import React from "react";
 import { render } from "react-dom";
-import { createStore } from "redux";
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient from "apollo-client";
 import { InMemoryCache } from "apollo-cache-inmemory";
@@ -25,8 +24,6 @@ const styles = {
   fontFamily: "sans-serif",
   textAlign: "center"
 };
-
-// const store = createStore(state => state, {});
 
 const Core = () => (
   <ApolloProvider client={client}>
